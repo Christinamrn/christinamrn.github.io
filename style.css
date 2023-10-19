@@ -1,0 +1,486 @@
+html{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+body{
+    display: block;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Playfair Display', serif;
+} 
+
+p{
+    text-align: justify;
+}
+
+.raleway{
+    font-family: 'Raleway';
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    background-color: #06050B;
+    transition: all 0.5s;
+    z-index: 9997;
+    padding: 0 15px;;
+    overflow-y: auto;
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+  
+#header .profile h1 {
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding-bottom: 10px;
+}
+  
+#header .profile h1 a,
+#header .profile h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+  
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+  
+#header .profile .social-links a:hover {
+    background: #333d29;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item span{
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    font-family: 'Raleway';
+  }
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 5px 15px;
+    /* margin-bottom: 5px; */
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color: #414833;
+}
+
+/*--------------------------------------------------------------
+# FRONT IMG me
+--------------------------------------------------------------*/
+
+#me{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/christina_profil.jpg) top right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#me .me-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    margin-left: 70%;
+}
+
+#me h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    line-height: 56px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#me p{
+    color: #132a13;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Raleway';
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    #me h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #me h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #me {
+      background-attachment: fixed;
+    }
+  }
+
+#main{
+    margin-left: 300px;
+}
+
+.container,
+.container-fluid {
+  padding-left: 10%;
+  padding-right: 30px;
+}
+
+@media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+  
+    #main {
+      margin-left: 0;
+    }
+  
+    .container,
+    .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+}
+
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+  
+.section-bg {
+    background: #eae0d5;
+}
+  
+.section-title {
+    padding-bottom: 30px;
+}
+  
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #656d4a;
+}
+  
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #414833;
+    bottom: 0;
+    left: 0;
+}
+  
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About me
+--------------------------------------------------------------*/
+
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #656d4a;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #656d4a;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #06050B;
+}
+  
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #656d4a;
+    position: relative;
+}
+  
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #06050B;
+    margin-bottom: 10px;
+    font-family: 'Raleway';
+}
+  
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #c2c5aa;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume ul{
+    font-family: 'Raleway';
+}
+  
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+  
+.resume .resume-item ul li {
+    padding-bottom: 5px;
+}
+  
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+  
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #656d4a;
+}
+  
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+}
+  
+.portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+  
+.portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+    color: #656d4a;
+}
+  
+.portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+}
+  
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+  
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+  
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background: #656d4a;
+    transition: 0.3s;
+    width: 50%;
+}
+  
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: #656d4a;
+}
+  
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid #727a54;
+}
+  
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+  
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+    min-height: 0em;
+}
+
+
+
+.constainsimgtexr{
+    position: relative;
+}
+
+.imggrid{
+    margin-top: 10px;
+    width: 50%;
+    float: left;
+}
+
+.textframe{
+    margin-top: 10px;
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
