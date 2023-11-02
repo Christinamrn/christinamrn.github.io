@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+    
     <!-- main style-->
     <link rel="stylesheet" type="text/css" href="../style.css">
     
@@ -38,34 +38,64 @@
 
 <body>
     <section>
-        <div class="container">
+        <div class="projcontainer">
             <div class="section-title">
                 <h2>Luciarinhu</h2>
-                <p class="raleway">Projet</p>
+                <p class="raleway">Projet de TER de Master 1 (2023)</p>
                 <div class="containsimgtext">
                     <div class="imggrid">
-                        <div class="container">
-                            <div class="row">
-                            
-                                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                                    <img src="./images/luciarinhu_logo.jpg" class="w-100 shadow-1-strong rounded mb-4" class="img-fluid">
-                                    <img src="./images/luciarinhu_scene1.jpg" class="w-100 shadow-1-strong rounded mb-4" class="img-fluid">
-                                </div>
-                            
-              
-                            
-                                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                                    <img src="./images/luciarinhu_scene2.jpg" class="w-100 shadow-1-strong rounded mb-4" class="img-fluid">
-                                    <img src="./images/luciarinhu_tableaufin.jpg" class="w-100 shadow-1-strong rounded mb-4" class="img-fluid">
-                                </div>
+
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./images/luciarinhu_logo.jpg" class="w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./images/luciarinhu_scene1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/luciarinhu_scene2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/luciarinhu_hanoienigma.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/luciarinhu_chiffoniercomplete.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/luciarinhu_tableaufin.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/luciarinhu_menu.jpg" class="d-block w-100" alt="...">
+                              </div>
                             </div>
-
-
-                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                              <i class="bi bi-chevron-left"></i>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                              <i class="bi bi-chevron-right"></i>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        
                     </div>
 
                     <div class="textframe">
-                        <p>Texte en cours d'écriture</p>
+                        <p>
+                            <i></i>
+                            Dans le cadre du second semestre de Master 1 Imagine, nous avons choisi notre propre sujet avec mon équipe composée de N. Luciani et N. Hutte. <br><br>
+                            Nous développé un jeu Point & Click, nommé "Luciarinhu", dont le but est de sortir de la pièce dans laquelle on se trouve après avoir trouvé la solution à différentes énigmes. <br><br>
+                            Le jeu est disponible sur itchio à l'adresse suivante : <a href="https://nicolas-lcn.itch.io/luciarinhu">lien</a>.
+                        </p>
+                        <p>
+                            <br>
+                            Mots-clés : Unity C#
+                            <br><br>
+                            <i>Les assets ont été dessinés par moi-même.</i>
+                        </p>
                     </div>
                 </div>
             </div>
