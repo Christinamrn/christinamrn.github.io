@@ -503,6 +503,13 @@ section{
     /* background-color: #c2c5aa; */
 }
 
+.imggrid{
+    margin-top: 10px;
+    width: 40%;
+    float: left;
+    /* background-color: #c2c5aa; */
+}
+
 .textframe{
     margin-top: 10px;
     width: 50%;
