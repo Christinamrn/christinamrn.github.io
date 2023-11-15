@@ -511,7 +511,7 @@ section{
 }
 
 .textframe{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 50%;
     float: right;
     padding: 10px;
